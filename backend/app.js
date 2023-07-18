@@ -39,3 +39,19 @@ app.listen(3000, () => {
   // eslint-disable-next-line no-console
   console.log('App listening on port 3000');
 });
+
+/* {
+  "name": "Dog@yandex.ru",
+  "country":"ger3",
+  "director": "director",
+  "duration": "duration",
+  "year": "2000",
+  "description": "description",
+  "image": "https://images.unsplash.com/photo-1635696847097-178da7324b9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+  "trailerLink": "https://images.unsplash.com/photo-1635696847097-178da7324b9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+  "thumbnail": "https://images.unsplash.com/photo-1635696847097-178da7324b9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
+  "movieId": "1",
+  "nameRU": "ru",
+  "nameEN": "en"
+
+} */
