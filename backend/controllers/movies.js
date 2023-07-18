@@ -24,8 +24,11 @@ const deleteMovieById = (req, res, next) => {
       if (movie.owner.toString() !== req.user._id) {
         next(new ForbiddenError('Not enough rights to delete the movie'));
       }
-      Movie.deleteOne()
-        .then(() => res.send({ message: 'Movie deleted' }))
+      Movie.deleteOne(movie)
+        .then(() => {
+          res.send(movie);
+          console.log(movie);
+        })
         .catch(next);
     })
     .catch((err) => {
