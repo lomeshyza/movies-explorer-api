@@ -69,28 +69,6 @@ const createUser = (req, res, next) => {
     });
 };
 
-/* const updateAvatar = (req, res, next) => {
-  User.findByIdAndUpdate(
-    req.user._id,
-    { avatar: req.body.avatar },
-    { new: true, runValidators: true },
-  )
-    .then((user) => {
-      if (!user) {
-        next(new NotFoundError('User not found'));
-      } else {
-        res.send(user);
-      }
-    })
-    .catch((err) => {
-      if (err.name === 'ValidationError') {
-        next(new BadRequestError('Bad request'));
-      } else {
-        next(err);
-      }
-    });
-};
- */
 const updateProfile = (req, res, next) => {
   User.findByIdAndUpdate(
     req.user._id,
@@ -153,7 +131,6 @@ module.exports = {
   getCurrentUser,
   getUserById,
   createUser,
-  // updateAvatar,
   updateProfile,
   login,
 };

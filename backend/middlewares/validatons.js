@@ -20,7 +20,6 @@ exports.signInValidation = celebrate({
 exports.createMovieValidation = celebrate({
   body: Joi.object()
     .keys({
-      name: Joi.string().required().min(2).max(30),
       country: Joi.string().required(),
       director: Joi.string().required(),
       duration: Joi.string().required(),
@@ -37,7 +36,7 @@ exports.createMovieValidation = celebrate({
 });
 exports.deleteMovieValidation = celebrate({
   params: Joi.object().keys({
-    id: Joi.string().required().length(24).hex(),
+    id: Joi.string().required().hex(),
   }),
 });
 exports.getUserValidation = celebrate({
@@ -50,5 +49,15 @@ exports.updateProfileValidation = celebrate({
   body: Joi.object().keys({
     name: Joi.string().required().min(2).max(30),
     email: Joi.string().required().email(),
+  }),
+});
+exports.putLikeValidation = celebrate({
+  params: Joi.object().keys({
+    id: Joi.string().required().hex(),
+  }),
+});
+exports.deleteLikeValidation = celebrate({
+  params: Joi.object().keys({
+    id: Joi.string().required().hex(),
   }),
 });
