@@ -35,7 +35,7 @@ app.use(errors());
 
 app.use(errorHandler);
 
-app.listen(3003, () => {
+app.listen(3000, () => {
   // eslint-disable-next-line no-console
-  console.log('App listening on port 3003');
+  console.log('App listening on port 3000');
 });
