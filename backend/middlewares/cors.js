@@ -1,10 +1,10 @@
 const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
 // Массив доменов, с которых разрешены кросс-доменные запросы
 const allowedCorsDomain = [
-  'https://starts.mesto.nomoreparties.sbs',
-  'http://starts.mesto.nomoreparties.sbs',
-  'https://api.starts.mesto.nomoreparties.sbs',
-  'http://api.starts.mesto.nomoreparties.sbs',
+  'https://starts.movies.nomoredomains.xyz;',
+  'http://starts.movies.nomoredomains.xyz;',
+  'https://api.starts.movies.nomoredomains.xyz;',
+  'http://api.starts.movies.nomoredomains.xyz;',
   'localhost:3000',
   'localhost:3001',
 ];
