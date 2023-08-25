@@ -41,7 +41,7 @@ exports.deleteMovieValidation = celebrate({
 });
 exports.getUserValidation = celebrate({
   params: Joi.object().keys({
-    id: Joi.string().required().length(24).hex(),
+    id: Joi.string().required().hex(),
   }),
 });
 
